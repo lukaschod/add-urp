@@ -62,7 +62,7 @@ namespace add_urp
             try
             {
                 if (args.Length != 2)
-                    throw new Exception("Error: Incorrect number of arguments expected 2");
+                    throw new Exception("Error: Incorrect number of arguments.\nExample of usage: add-urp [project-path/manifest-path] [graphics-repo-path].");
 
                 string pathToManifest = null;
                 var pathToProject = Path.GetFullPath(args[0]).Replace("\\", "/");
